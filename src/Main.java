@@ -67,6 +67,7 @@ public class Main {
         for (int i = arr3.length - 1; i >= 0; i--) {
             //System.out.println("Длина Массива = " + arr3.length);
             //System.out.println("Индекс = "+i);
+            //System.out.println("Индекс = " + i + " это = " + arr3[i]);
             System.out.print(arr3[i]);
             if (i != 0) {
                 System.out.print(" ,");
@@ -78,13 +79,33 @@ public class Main {
 
     public static void task4() {
         System.out.println("                                     ---=== Задание № 4 ===---");
-        int[] a = {1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12, 13};
-        for (int index = 0; index < a.length; index++) {
-            a[index] = index + 1;
-            if (index % 2 == 0 && index != 0) {
-                System.out.print(index + " ");
+        /*int[] array = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12}; // 12, 11, 10, 9, 8, 7, 6, 5, 4, 3, 2, 1
+        System.out.println("Длина массива = " + array.length);
+        for (int i = array.length - 1; i >= 0; i--) {
+            //System.out.println("2 Длина массива = " + array.length);
+            //System.out.println("Индекс = " + i + " это = " + array[i]);
+            System.out.print(array[i]);
+            if (i != 0) {
+                System.out.print(", ");
             }
         }
+        System.out.println();
+        for (int i = 0; i < array.length; i++) {  // 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12
+            System.out.print(array[i]);
+            //System.out.println("Индекс = " + i + " это = " + array[i]);
+            if (array[i] != array.length) {
+                System.out.print(", ");
+            }
+        }*/
+        int[] array = {1, 2, 3};
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] % 2 != 0) {
+                array[i] += 1;
+            }
+
+        }
+        System.out.println(Arrays.toString(array));
+
     }
 
 
