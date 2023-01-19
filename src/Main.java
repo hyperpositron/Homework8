@@ -45,24 +45,35 @@ public class Main {
 
     public static void task3() {
         System.out.println("                                     ---=== Задание № 3 ===---");
-        int[] a = new int[12];
-        a[0] = 1;
-        a[1] = 2;
-        a[2] = 3;
-        for (int i = a.length - 1; i >= 0; i--) {
-            System.out.print(", " + a[i]);
+        int[] arr1 = {1, 2, 3};
+        double[] arr2 = {1.57, 7.654, 9.986};
+        char[] arr3 = {'a', 'b', 'c', 'd', 'e'};
+        for (int i = arr1.length - 1; i >= 0; i--) {
+            System.out.print(arr1[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
         }
         System.out.println();
-        double[] b = {1.57, 7.654, 9.986, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-        for (int i = b.length - 1; i >= 0; i--) {
-            System.out.print(", " + b[i]);
+        for (int i = arr2.length - 1; i >= 0; i--) {
+            //System.out.println("Длина Массива = " + arr2.length);
+            //System.out.println(i + " это индекс");
+            System.out.print(arr2[i]);
+            if (i != 0) {
+                System.out.print(", ");
+            }
         }
         System.out.println();
-        int[] c = {11, 22, 33, 44, 55, 66, 77, 88, 99, 111, 122, 133};
-        for (int i = c.length - 1; i >= 0; i--) {
-            System.out.print(", " + c[i]);
+        for (int i = arr3.length - 1; i >= 0; i--) {
+            //System.out.println("Длина Массива = " + arr3.length);
+            //System.out.println("Индекс = "+i);
+            System.out.print(arr3[i]);
+            if (i != 0) {
+                System.out.print(" ,");
+            }
         }
         System.out.println();
+
     }
 
     public static void task4() {
